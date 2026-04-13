@@ -1,2 +1,19 @@
 @import "tailwindcss";
 
+@layer utilities {
+  .animate-fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

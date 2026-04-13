@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const gold = "#cfb56a";
 const navLinks = [
   { href: "/", label: "Anasayfa" },
   { href: "/hakkimizda", label: "Hakkımızda" },
@@ -186,11 +185,12 @@ function IconHome({ className }: { className?: string }) {
 }
 
 /** Godiva scheme-3 benzeri: neredeyse saf siyah, vurgu #cfb56a */
-const navBg = "#030303";
-const navBgElevated = "#0a0a0a";
+const gold = "#cfb56a"; // Godiva gold
+const navBg = "#030303"; // Onyx black
+const navBgElevated = "#0a0a0a"; // Elevated black
 
 const iconBtn =
-  "flex h-10 w-10 items-center justify-center text-[#e8e4dc] transition-colors hover:text-[#cfb56a]";
+  "flex h-10 w-10 items-center justify-center text-[#e8e4dc] transition-colors hover:text-[#d4af37]";
 
 export function SiteNav() {
   const pathname = usePathname();
@@ -210,7 +210,7 @@ export function SiteNav() {
   return (
     <div className="sticky top-0 z-50">
       <aside
-        className="border-b border-[#b89d4a]/45 bg-gradient-to-b from-[#f0e2b0] via-[#e8d48a] to-[#dfc978] px-4 py-2.5 text-center text-[0.8125rem] leading-snug text-[#2a2215] shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] sm:text-[0.9375rem]"
+        className="border-b border-black/10 bg-[#d4af37] px-4 py-2.5 text-center text-[0.8125rem] leading-snug text-black shadow-sm sm:text-[0.9375rem]"
         aria-label="Duyurular"
       >
         <p className="font-semibold tracking-wide">
@@ -219,7 +219,7 @@ export function SiteNav() {
       </aside>
 
       <header
-        className="border-b border-white/[0.06] shadow-[0_1px_0_rgba(207,181,106,0.06)]"
+        className="border-b-2 border-white shadow-sm"
         style={{ backgroundColor: navBg }}
       >
         <div className="mx-auto max-w-7xl px-4 py-3 md:px-6 md:py-4">
@@ -247,7 +247,7 @@ export function SiteNav() {
               <div className="hidden text-sm font-medium uppercase tracking-wide text-[#e8e4dc] lg:block">
                 <Link
                   href="/iletisim"
-                  className="group flex items-center gap-2 border-b border-transparent pb-0.5 transition-colors hover:border-[#cfb56a] hover:text-[#cfb56a]"
+                  className="group flex items-center gap-2 border-b border-transparent pb-0.5 transition-colors hover:border-[#d4af37] hover:text-[#d4af37]"
                 >
                   <IconPin />
                   <span>Mağazalar</span>
@@ -258,10 +258,13 @@ export function SiteNav() {
             <div className="flex justify-center px-1">
               <Link
                 href="/"
-                className="truncate text-center font-serif text-base font-semibold tracking-[0.15em] text-[#faf8f5] sm:text-lg md:text-2xl md:tracking-[0.2em]"
-                style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+                className="flex items-center justify-center shrink-0"
               >
-                MY APP
+                <img 
+                  src="/333.png" 
+                  alt="Marka Logosu" 
+                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                />
               </Link>
             </div>
 
@@ -269,7 +272,7 @@ export function SiteNav() {
               <div className="mr-0.5 hidden shrink-0 items-center text-sm font-medium uppercase tracking-wide text-[#e8e4dc] md:flex lg:hidden">
                 <Link
                   href="/iletisim"
-                  className="flex items-center gap-1.5 transition-colors hover:text-[#cfb56a]"
+                  className="flex items-center gap-1.5 transition-colors hover:text-[#d4af37]"
                   aria-label="Mağazalar"
                 >
                   <IconPin />
@@ -290,7 +293,7 @@ export function SiteNav() {
                   aria-label="Sepet"
                 >
                   <IconCart />
-                  <span className="absolute right-1 top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-[#cfb56a] px-1 text-[10px] font-bold text-[#030303]">
+                  <span className="absolute right-1 top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-[#d4af37] px-1 text-[10px] font-bold text-[#030303]">
                     0
                   </span>
                 </Link>
@@ -300,7 +303,7 @@ export function SiteNav() {
                   aria-label="Favoriler"
                 >
                   <IconWishlist />
-                  <span className="absolute -right-0.5 top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full border border-[#cfb56a]/35 bg-[#030303] px-1 text-[10px] font-semibold text-[#cfb56a]">
+                  <span className="absolute -right-0.5 top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full border border-[#d4af37]/35 bg-[#030303] px-1 text-[10px] font-semibold text-[#d4af37]">
                     0
                   </span>
                 </Link>
@@ -319,9 +322,9 @@ export function SiteNav() {
                 <Link
                   key={href}
                   href={href}
-                  className={`border-b-2 pb-1 text-xs font-semibold uppercase tracking-[0.14em] transition-colors xl:text-sm text-[#cfb56a] ${active
-                    ? "border-[#cfb56a]"
-                    : "border-transparent hover:border-[#cfb56a]/60"
+                  className={`border-b-2 pb-1 text-xs font-semibold uppercase tracking-[0.14em] transition-colors xl:text-sm text-[#d4af37] ${active
+                    ? "border-[#d4af37]"
+                    : "border-transparent hover:border-[#d4af37]/60"
                     }`}
                 >
                   {label}
@@ -346,12 +349,12 @@ export function SiteNav() {
             style={{ backgroundColor: navBgElevated }}
           >
             <div className="flex items-center justify-between border-b border-white/[0.08] px-4 py-3">
-              <span className="text-sm font-semibold uppercase tracking-wider text-[#cfb56a]">
+              <span className="text-sm font-semibold uppercase tracking-wider text-[#d4af37]">
                 Menü
               </span>
               <button
                 type="button"
-                className="flex h-10 w-10 items-center justify-center text-[#e8e4dc] hover:text-[#cfb56a]"
+                className="flex h-10 w-10 items-center justify-center text-[#e8e4dc] hover:text-[#d4af37]"
                 onClick={() => setMenuOpen(false)}
                 aria-label="Kapat"
               >
@@ -363,7 +366,7 @@ export function SiteNav() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="block px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:bg-white/[0.04] hover:text-[#cfb56a]"
+                    className="block px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:bg-white/[0.04] hover:text-[#d4af37]"
                   >
                     {label}
                   </Link>
@@ -372,7 +375,7 @@ export function SiteNav() {
               <li>
                 <Link
                   href="/iletisim"
-                  className="flex items-center gap-2 px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:bg-white/[0.04] hover:text-[#cfb56a]"
+                  className="flex items-center gap-2 px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:bg-white/[0.04] hover:text-[#d4af37]"
                 >
                   <IconPin className="shrink-0" />
                   Mağazalar
@@ -382,9 +385,9 @@ export function SiteNav() {
             <div className="border-t border-white/[0.06] p-4">
               <Link
                 href="/iletisim"
-                className="flex items-center gap-2 text-sm text-[#c9c4ba] hover:text-[#cfb56a]"
+                className="flex items-center gap-2 text-sm text-[#c9c4ba] hover:text-[#d4af37]"
               >
-                <IconAccount className="text-[#cfb56a]" />
+                <IconAccount className="text-[#d4af37]" />
                 Giriş yap
               </Link>
             </div>

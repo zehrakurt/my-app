@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteNav } from "@/components/SiteNav";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,7 +36,12 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col">
         <SiteNav />
 
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+
+        <SiteFooter />
+        <WhatsAppButton />
       </body>
     </html>
   );

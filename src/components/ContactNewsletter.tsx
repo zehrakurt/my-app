@@ -4,11 +4,10 @@ export function ContactNewsletter() {
   return (
     <section className="w-full bg-[#f8f6f3]">
 
-      {/* 🔥 FIX: equal height system */}
-      <div className="flex flex-col lg:flex-row gap-[10px] lg:h-[520px]">
+      <div className="flex flex-col lg:flex-row lg:h-[550px]">
 
         {/* SOL - IMAGE */}
-        <div className="w-full lg:basis-[65%] h-[300px] lg:h-full">
+        <div className="w-full lg:basis-[60%] h-[300px] md:h-[450px] lg:h-full">
           <img
             src="https://www.godiva.com.tr/cdn/shop/files/1500x800box.png?v=1740145632&width=1500"
             alt=""
@@ -17,9 +16,9 @@ export function ContactNewsletter() {
         </div>
 
         {/* SAĞ - FORM */}
-        <div className="w-full lg:basis-[35%] h-[300px] lg:h-full bg-[#d4af37] flex items-center justify-center">
+        <div className="w-full lg:basis-[40%] py-12 lg:py-8 px-4 h-auto lg:h-full bg-[#d4af37] flex items-center justify-center">
 
-          <div className="w-full max-w-[360px] px-6">
+          <div className="w-full max-w-[400px]">
 
             <h2 className="text-[22px] font-serif uppercase tracking-[0.15em] text-black mb-4 text-center">
               BİZE ULAŞIN
