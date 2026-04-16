@@ -9,10 +9,11 @@ export default function Home() {
   return (
     <>
       <HeroBanner />
+      <FeaturedProducts />
       <CategoryGrid />
       <AboutSnippet />
       <ContactNewsletter />
-      <FeaturedProducts />
+
 
       <FeaturesSection />
     </>

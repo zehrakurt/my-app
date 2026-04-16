@@ -17,7 +17,7 @@ export function SiteFooter() {
               className="mb-4 inline-block"
             >
               <h2 
-                className="text-3xl font-serif italic text-[#d4af37] tracking-[0.05em]" 
+                className="text-3xl font-serif italic text-[#ddbd53] tracking-[0.05em]" 
                 style={{ fontFamily: "'Playfair Display', 'Georgia', serif", textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}
               >
                 Doliva

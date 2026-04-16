@@ -14,7 +14,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "https://images.pexels.com/photos/867470/pexels-photo-867470.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "77.png",
     title: "El Yapımı Pralinler",
     subtitle: "Katkısız ve Doğal Kakao %100 Memnuniyet",
     buttonText: "Ürünleri İncele",
@@ -22,7 +22,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/11.png",
+    image: "/66.png",
     title: "Premium Çikolata Deneyimi",
     subtitle: "Ustalıkla Hazırlanmış Lezzetler",
     buttonText: "Hemen Keşfet",
@@ -51,8 +51,8 @@ export function HeroBanner() {
 
   return (
     <section className="relative w-full h-[400px] bg-black overflow-hidden group">
-      
-      <div 
+
+      <div
         className="flex w-full h-full transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
@@ -68,8 +68,8 @@ export function HeroBanner() {
             </div>
 
             {slide.title && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-                <h3 className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-[#d4af37] mb-2 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+              <div className="absolute inset-0 flex flex-col items-start justify-center text-left px-8 md:px-16 lg:px-24">
+                <h3 className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-[#ddbd53] mb-2 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                   {slide.subtitle}
                 </h3>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
@@ -77,7 +77,7 @@ export function HeroBanner() {
                 </h2>
                 <Link
                   href={slide.link}
-                  className="bg-[#d4af37] text-black px-6 py-2.5 text-xs md:text-sm uppercase tracking-[0.2em] font-semibold hover:bg-white hover:text-black transition-colors duration-300 opacity-0 animate-fadeInUp"
+                  className="bg-[#ddbd53] text-black px-6 py-2.5 text-xs md:text-sm uppercase tracking-[0.2em] font-semibold hover:bg-white hover:text-black transition-colors duration-300 opacity-0 animate-fadeInUp"
                   style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}
                 >
                   {slide.buttonText}
@@ -88,18 +88,18 @@ export function HeroBanner() {
         ))}
       </div>
 
-      <button 
+      <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/20 hover:bg-[#d4af37] text-white hover:text-black rounded-full transition-all duration-300 opacity-0 md:group-hover:opacity-100"
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/20 hover:bg-[#ddbd53] text-white hover:text-black rounded-full transition-all duration-300 opacity-0 md:group-hover:opacity-100"
       >
         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
 
-      <button 
+      <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/20 hover:bg-[#d4af37] text-white hover:text-black rounded-full transition-all duration-300 opacity-0 md:group-hover:opacity-100"
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/20 hover:bg-[#ddbd53] text-white hover:text-black rounded-full transition-all duration-300 opacity-0 md:group-hover:opacity-100"
       >
         <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -111,9 +111,8 @@ export function HeroBanner() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              currentSlide === index ? "bg-[#d4af37] w-6" : "bg-white/50 hover:bg-white"
-            }`}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-[#ddbd53] w-6" : "bg-white/50 hover:bg-white"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

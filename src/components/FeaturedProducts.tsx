@@ -39,12 +39,12 @@ export function FeaturedProducts() {
         
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div className="max-w-2xl">
-            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-[#d4af37] mb-3">ÖZEL SEÇKİ</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-[#ddbd53] mb-3">ÖZEL SEÇKİ</h2>
             <h3 className="text-3xl md:text-4xl font-serif text-[#1c1c1c]">Öne Çıkan Lezzetler</h3>
           </div>
           <Link 
             href="/urunler" 
-            className="hidden md:inline-flex items-center gap-2 text-gray-500 hover:text-[#d4af37] font-medium transition-colors"
+            className="hidden md:inline-flex items-center gap-2 text-gray-500 hover:text-[#ddbd53] font-medium transition-colors"
           >
             Tümünü Gör
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,7 +59,7 @@ export function FeaturedProducts() {
               
               <div className="relative aspect-square overflow-hidden bg-gray-50">
                 {product.badge && (
-                  <div className="absolute top-4 left-4 z-10 bg-[#d4af37] text-black text-xs font-bold uppercase tracking-[0.1em] py-1.5 px-3">
+                  <div className="absolute top-4 left-4 z-10 bg-[#ddbd53] text-black text-xs font-bold uppercase tracking-[0.1em] py-1.5 px-3">
                     {product.badge}
                   </div>
                 )}
@@ -72,7 +72,7 @@ export function FeaturedProducts() {
 
               <div className="pt-5 text-center px-2">
                 <Link href={`/urunler`}>
-                  <h4 className="text-base min-[1150px]:text-lg font-medium text-[#1c1c1c] mb-1.5 group-hover:text-[#d4af37] transition-colors leading-snug">
+                  <h4 className="text-base min-[1150px]:text-lg font-medium text-[#1c1c1c] mb-1.5 group-hover:text-[#ddbd53] transition-colors leading-snug">
                     {product.name}
                   </h4>
                 </Link>

@@ -19,17 +19,17 @@ export function AboutSnippet() {
             </div>
             
             {/* Absolute positioning element for a stylish badge */}
-            <div className="absolute -bottom-6 -right-6 md:bottom-10 md:-right-10 bg-[#d4af37] text-black p-6 rounded-none w-32 h-32 flex flex-col items-center justify-center shadow-xl z-20 border-4 border-white transform rotate-12">
+            <div className="absolute -bottom-6 -right-6 md:bottom-10 md:-right-10 bg-[#ddbd53] text-black p-6 rounded-none w-32 h-32 flex flex-col items-center justify-center shadow-xl z-20 border-4 border-white transform rotate-12">
               <span className="font-serif text-3xl font-bold">%100</span>
               <span className="text-xs uppercase tracking-wider mt-1 font-semibold">El Yapımı</span>
             </div>
           </div>
 
           <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
-            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-[#d4af37] mb-4">HİKAYEMİZ</h2>
+            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-[#ddbd53] mb-4">HİKAYEMİZ</h2>
             <h3 className="text-4xl md:text-5xl font-serif text-[#1c1c1c] mb-6 leading-tight">
               Gerçek Çikolata <br />
-              <span className="text-[#d4af37] italic">Aşkı</span>
+              <span className="text-[#ddbd53] italic">Aşkı</span>
             </h3>
             
             <div className="space-y-6 text-gray-500 text-[15px] leading-relaxed mb-10">
@@ -43,7 +43,7 @@ export function AboutSnippet() {
 
             <Link 
               href="/hakkimizda" 
-              className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-black text-white text-xs font-semibold uppercase tracking-[0.15em] hover:bg-[#d4af37] hover:text-black transition-colors duration-300 group"
+              className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-black text-white text-xs font-semibold uppercase tracking-[0.15em] hover:bg-[#ddbd53] hover:text-black transition-colors duration-300 group"
             >
               Hikayemizi Keşfedin
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">

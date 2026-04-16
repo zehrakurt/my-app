@@ -53,7 +53,7 @@ export function FeaturesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center group cursor-pointer">
-              <div className="w-20 h-20 rounded-full bg-[#d4af37] flex items-center justify-center mb-6 shadow-[0_0_0_4px_rgba(212,175,55,0.2)] group-hover:scale-110 transition-transform duration-300">
+              <div className="w-20 h-20 rounded-full bg-[#ddbd53] flex items-center justify-center mb-6 shadow-[0_0_0_4px_rgba(221,189,83,0.2)] group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-medium text-[#1c1c1c] mb-3 uppercase tracking-wider">{feature.title}</h3>

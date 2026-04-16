@@ -16,7 +16,7 @@ export function ContactNewsletter() {
         </div>
 
         {/* SAĞ - FORM */}
-        <div className="w-full lg:basis-[40%] py-12 lg:py-8 px-4 h-auto lg:h-full bg-[#d4af37] flex items-center justify-center">
+        <div className="w-full lg:basis-[40%] py-12 lg:py-8 px-4 h-auto lg:h-full bg-[#ddbd53] flex items-center justify-center">
 
           <div className="w-full max-w-[400px]">
 

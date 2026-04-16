@@ -27,7 +27,7 @@ export function CategoryGrid() {
             />
 
             <div className="absolute inset-0 flex items-end justify-center p-6">
-              <span className="bg-[#d4af37] text-black px-6 py-2 uppercase tracking-[0.2em] text-xs font-semibold transition-all duration-300 group-hover:bg-[#b8962e]">
+              <span className="bg-[#ddbd53] text-black px-6 py-2 uppercase tracking-[0.2em] text-xs font-semibold transition-all duration-300 group-hover:bg-[#b8962e]">
                 ÖZEL KOLEKSİYONLAR
               </span>
             </div>
@@ -45,7 +45,7 @@ export function CategoryGrid() {
             />
 
             <div className="absolute inset-0 flex items-end justify-center p-6">
-              <span className="bg-[#d4af37] text-black px-6 py-2 uppercase tracking-[0.2em] text-xs font-semibold transition-all duration-300 group-hover:bg-[#b8962e]">
+              <span className="bg-[#ddbd53] text-black px-6 py-2 uppercase tracking-[0.2em] text-xs font-semibold transition-all duration-300 group-hover:bg-[#b8962e]">
                 KURUMSALLARA ÖZEL FIRSATLAR
               </span>
             </div>
@@ -63,7 +63,7 @@ export function CategoryGrid() {
             />
 
             <div className="absolute inset-0 flex items-end justify-center p-6">
-              <span className="bg-[#d4af37] text-black px-6 py-2 uppercase tracking-[0.2em] text-xs font-semibold transition-all duration-300 group-hover:bg-[#b8962e]">
+              <span className="bg-[#ddbd53] text-black px-6 py-2 uppercase tracking-[0.2em] text-xs font-semibold transition-all duration-300 group-hover:bg-[#b8962e]">
                 YENİ ÜRÜNLER
               </span>
             </div>
