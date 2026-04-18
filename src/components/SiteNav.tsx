@@ -236,12 +236,7 @@ export function SiteNav() {
                 href="/"
                 className="flex items-center justify-center shrink-0"
               >
-                <img
-                  src="/logo_ultra.png"
-                  alt="Doliva Logo"
-                  className="h-40 sm:h-32 md:h-48 w-auto object-contain"
-                  style={{ mixBlendMode: 'screen', clipPath: 'inset(5%)' }}
-                />
+
               </Link>
             </div>
 
