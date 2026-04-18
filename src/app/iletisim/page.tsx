@@ -8,28 +8,26 @@ export const metadata: Metadata = {
 export default function IletisimPage() {
   const address = "Sokullu Mehmetpaşa Mah. Ahmet Haşim Cad. No:25/A Dikmen - Çankaya, Ankara";
   const mapQuery = encodeURIComponent(address);
-  
+
   return (
     <div className="bg-white min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-[#30261D] py-20 md:py-32">
+      {/* Simple Header matching Products page style */}
+      <section className="py-16 md:py-14 border-b border-gray-100">
         <div className="max-w-[1400px] mx-auto px-4 lg:px-8 text-center">
-          <h1 className="font-serif text-4xl md:text-6xl text-white mb-6 tracking-tight">İletişim</h1>
-          <p className="text-[#ddbd53] text-sm md:text-base uppercase tracking-[0.3em] font-medium max-w-2xl mx-auto opacity-90">
-            Sizinle Tanışmak İçin Sabırsızlanıyoruz
-          </p>
+          <h1 className="font-serif text-4xl md:text-5xl text-[#1c1c1c] tracking-tight">İletişim</h1>
+          <div className="w-16 h-1 bg-[#ddbd53] mx-auto mt-6"></div>
         </div>
       </section>
 
       <main className="max-w-[1400px] mx-auto px-4 lg:px-8 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24">
-          
+
           {/* Sol Kolon: İletişim Bilgileri */}
           <div className="space-y-12">
             <div>
               <h2 className="font-serif text-3xl text-[#1c1c1c] mb-8">Bize Ulaşın</h2>
               <div className="space-y-8">
-                
+
                 {/* İletişim Kişisi */}
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-[#f8f5f0] flex items-center justify-center flex-shrink-0">
@@ -86,7 +84,7 @@ export default function IletisimPage() {
                 </div>
 
               </div>
-              
+
               <div className="mt-12 pt-8 border-t border-gray-100 italic text-sm text-gray-400">
                 Doliva bir LMG Grup markasıdır.
               </div>
@@ -94,28 +92,28 @@ export default function IletisimPage() {
           </div>
 
           {/* Sağ Kolon: İletişim Formu */}
-          <div className="bg-[#fcfaf7] p-8 md:p-12 rounded-sm border border-gray-100 shadow-sm">
-            <h3 className="font-serif text-2xl text-[#1c1c1c] mb-8">Mesaj Gönderin</h3>
+          <div className="bg-[#ddbd53] p-8 md:p-12 rounded-sm shadow-xl">
+            <h3 className="font-serif text-2xl text-black mb-8 uppercase tracking-widest">Mesaj Gönderin</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">Ad Soyad</label>
-                  <input type="text" className="w-full bg-white border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#ddbd53] transition-colors" placeholder="Adınız" />
+                  <label className="block text-[10px] font-bold uppercase tracking-widest text-black/60 mb-1">Ad Soyad</label>
+                  <input type="text" className="w-full bg-transparent border-b border-black/30 py-3 text-sm text-black focus:outline-none focus:border-black transition-colors placeholder:text-black/40" placeholder="Adınız" />
                 </div>
                 <div>
-                  <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">E-posta</label>
-                  <input type="email" className="w-full bg-white border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#ddbd53] transition-colors" placeholder="E-posta adresiniz" />
+                  <label className="block text-[10px] font-bold uppercase tracking-widest text-black/60 mb-1">E-posta</label>
+                  <input type="email" className="w-full bg-transparent border-b border-black/30 py-3 text-sm text-black focus:outline-none focus:border-black transition-colors placeholder:text-black/40" placeholder="E-posta adresiniz" />
                 </div>
               </div>
               <div>
-                <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">Konu</label>
-                <input type="text" className="w-full bg-white border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#ddbd53] transition-colors" placeholder="Konu" />
+                <label className="block text-[10px] font-bold uppercase tracking-widest text-black/60 mb-1">Konu</label>
+                <input type="text" className="w-full bg-transparent border-b border-black/30 py-3 text-sm text-black focus:outline-none focus:border-black transition-colors placeholder:text-black/40" placeholder="Konu" />
               </div>
               <div>
-                <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-2">Mesajınız</label>
-                <textarea rows={5} className="w-full bg-white border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:border-[#ddbd53] transition-colors resize-none" placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
+                <label className="block text-[10px] font-bold uppercase tracking-widest text-black/60 mb-1">Mesajınız</label>
+                <textarea rows={4} className="w-full bg-transparent border-b border-black/30 py-3 text-sm text-black focus:outline-none focus:border-black transition-colors resize-none placeholder:text-black/40" placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
               </div>
-              <button type="submit" className="w-full bg-black text-white text-[10px] font-bold uppercase tracking-[0.3em] py-4 hover:bg-[#ddbd53] hover:text-black transition-all duration-300">
+              <button type="submit" className="w-full bg-black text-white text-[10px] font-bold uppercase tracking-[0.3em] py-4 hover:bg-gray-900 transition-all duration-300 shadow-md">
                 GÖNDER
               </button>
             </form>

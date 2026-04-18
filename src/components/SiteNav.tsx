@@ -13,319 +13,140 @@ const navLinks = [
 
 function IconHamburger({ className }: { className?: string }) {
   return (
-    <svg
-      aria-hidden
-      fill="none"
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      className={className}
-    >
-      <path
-        d="M1 19h22M1 12h22M1 5h22"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeLinecap="square"
-      />
+    <svg aria-hidden fill="none" width={24} height={24} viewBox="0 0 24 24" className={className}>
+      <path d="M1 19h22M1 12h22M1 5h22" stroke="currentColor" strokeWidth={1.5} strokeLinecap="square" />
     </svg>
   );
 }
 
 function IconClose({ className }: { className?: string }) {
   return (
-    <svg
-      aria-hidden
-      fill="none"
-      width={16}
-      height={16}
-      viewBox="0 0 16 16"
-      className={className}
-    >
-      <path
-        d="m1 1 14 14M1 15 15 1"
-        stroke="currentColor"
-        strokeWidth={1.5}
-      />
+    <svg aria-hidden fill="none" width={16} height={16} viewBox="0 0 16 16" className={className}>
+      <path d="m1 1 14 14M1 15 15 1" stroke="currentColor" strokeWidth={1.5} />
     </svg>
   );
 }
 
 function IconPin({ className }: { className?: string }) {
   return (
-    <svg
-      aria-hidden
-      width={22}
-      height={22}
-      viewBox="0 0 24 24"
-      fillRule="evenodd"
-      clipRule="evenodd"
-      className={className}
-    >
-      <path
-        d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602"
-        fill="none"
-        stroke={gold}
-        strokeWidth={1}
-      />
+    <svg aria-hidden width={22} height={22} viewBox="0 0 24 24" fillRule="evenodd" clipRule="evenodd" className={className}>
+      <path d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602" fill="none" stroke={gold} strokeWidth={1} />
     </svg>
   );
 }
 
-function IconAccount({ className }: { className?: string }) {
+function IconWhatsApp({ className }: { className?: string }) {
   return (
-    <svg
-      aria-hidden
-      fill="none"
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      className={className}
-    >
-      <path
-        d="M16.125 8.75c-.184 2.478-2.063 4.5-4.125 4.5s-3.944-2.021-4.125-4.5c-.187-2.578 1.64-4.5 4.125-4.5 2.484 0 4.313 1.969 4.125 4.5Z"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M3.017 20.747C3.783 16.5 7.922 14.25 12 14.25s8.217 2.25 8.984 6.497"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeMiterlimit={10}
-      />
+    <svg aria-hidden fill="currentColor" width={24} height={24} viewBox="0 0 24 24" className={className}>
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  );
+}
+
+function IconInstagram({ className }: { className?: string }) {
+  return (
+    <svg aria-hidden fill="none" width={24} height={24} viewBox="0 0 24 24" className={className}>
+      <path d="M12 16.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" stroke="currentColor" strokeWidth={1.5} strokeMiterlimit={10} />
+      <path d="M17.374 3H6.626C4.624 3 3 4.624 3 6.626v10.748C3 19.376 4.624 21 6.626 21h10.748c2.002 0 3.626-1.624 3.626-3.626V6.626C21 4.624 19.376 3 17.374 3Z" stroke="currentColor" strokeWidth={1.5} strokeMiterlimit={10} />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
     </svg>
   );
 }
 
 function IconSearch({ className }: { className?: string }) {
   return (
-    <svg
-      aria-hidden
-      fill="none"
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      className={className}
-    >
-      <path
-        d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeMiterlimit={10}
-      />
-      <path
-        d="M15.857 15.858 21 21.001"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeMiterlimit={10}
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
-
-function IconCart({ className }: { className?: string }) {
-  return (
-    <svg
-      aria-hidden
-      fill="none"
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      className={className}
-    >
-      <path
-        d="M4.75 8.25A.75.75 0 0 0 4 9L3 19.125c0 1.418 1.207 2.625 2.625 2.625h12.75c1.418 0 2.625-1.149 2.625-2.566L20 9a.75.75 0 0 0-.75-.75H4.75Zm2.75 0v-1.5a4.5 4.5 0 0 1 4.5-4.5v0a4.5 4.5 0 0 1 4.5 4.5v1.5"
-        stroke="currentColor"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function IconWishlist({ className }: { className?: string }) {
-  return (
-    <svg
-      aria-hidden
-      width={24}
-      height={24}
-      viewBox="-5 -5 30 30"
-      fill="none"
-      className={className}
-    >
-      <path
-        d="M12.4869 22C12.2364 21.9968 11.9918 21.9232 11.7804 21.7875C8.18822 19.57 5.48518 17.3766 3.2783 14.8705C2.01853 13.5287 1.04215 11.942 0.408559 10.207C-0.730606 6.84675 0.5832 2.9211 3.46882 1.07256C4.78425 0.221399 6.35422 -0.134962 7.90363 0.0659208C9.45304 0.266804 10.8831 1.01212 11.9431 2.17126C12.1376 2.37977 12.3162 2.60031 12.4869 2.81685C12.7194 2.51694 12.97 2.2317 13.2371 1.96275C13.8816 1.32075 14.6473 0.816306 15.4888 0.479444C16.3303 0.142583 17.2302 -0.0198119 18.1351 0.00192686C19.0214 0.0266866 19.8936 0.23235 20.6992 0.606539C21.5048 0.980728 22.2271 1.51571 22.8227 2.17928C25.0693 4.63732 25.6012 7.62065 24.3072 10.8045C23.6255 12.404 22.6611 13.8647 21.4613 15.1151C19.3548 17.3836 16.9713 19.3724 14.3683 21.0336C14.019 21.2662 13.6578 21.4907 13.3006 21.7113L13.1934 21.7795C12.9825 21.9174 12.738 21.9937 12.4869 22Z"
-        stroke="currentColor"
-      />
+    <svg aria-hidden fill="none" width={24} height={24} viewBox="0 0 24 24" className={className}>
+      <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727Z" stroke="currentColor" strokeWidth={1.5} strokeMiterlimit={10} />
+      <path d="M15.857 15.858 21 21.001" stroke="currentColor" strokeWidth={1.5} strokeMiterlimit={10} strokeLinecap="round" />
     </svg>
   );
 }
 
 function IconHome({ className }: { className?: string }) {
   return (
-    <svg
-      aria-hidden
-      width={26}
-      height={26}
-      viewBox="0 0 24 24"
-      fill="none"
-      className={className}
-    >
-      <path
-        d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z"
-        stroke="currentColor"
-        strokeWidth={1.25}
-        strokeLinejoin="round"
-      />
+    <svg aria-hidden width={24} height={24} viewBox="0 0 24 24" fill="none" className={className}>
+      <path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" strokeWidth={1.25} strokeLinejoin="round" />
     </svg>
   );
 }
 
-/** Godiva scheme-3 benzeri: neredeyse saf siyah, vurgu #cfb56a */
-const gold = "#cfb56a"; // Godiva gold
-const navBg = "#030303"; // Onyx black
-const navBgElevated = "#0a0a0a"; // Elevated black
-
-const iconBtn =
-  "flex h-10 w-10 items-center justify-center text-[#e8e4dc] transition-colors hover:text-[#ddbd53]";
+const gold = "#cfb56a";
+const navBg = "#030303";
+const navBgElevated = "#0a0a0a";
+const iconBtn = "flex h-10 w-10 items-center justify-center text-[#e8e4dc] transition-colors hover:text-[#ddbd53]";
 
 export function SiteNav() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
+  useEffect(() => { setMenuOpen(false); }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
+    return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
   return (
     <div className="sticky top-0 z-50">
-      <aside
-        className="border-b border-black/10 bg-[#ddbd53] px-4 py-2.5 text-center text-[0.8125rem] leading-snug text-black shadow-sm sm:text-[0.9375rem]"
-        aria-label="Duyurular"
-      >
-        <p className="font-semibold tracking-wide">
-          ANKARA İÇİ TESLİMAT ÜCRETSİZDİR.
-        </p>
+      <aside className="border-b border-black/10 bg-[#ddbd53] px-4 py-2.5 text-center text-[0.8125rem] leading-snug text-black shadow-sm" aria-label="Duyurular">
+        <p className="font-semibold tracking-wide">ANKARA İÇİ TESLİMAT ÜCRETSİZDİR.</p>
       </aside>
 
-      <header
-        className="border-b-2 border-white shadow-sm"
-        style={{ backgroundColor: navBg }}
-      >
-        <div className="mx-auto max-w-7xl px-4 py-3 md:px-6 md:py-4">
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
-            <div className="flex min-w-0 items-center gap-1 sm:gap-2">
-              <button
-                type="button"
-                className={`${iconBtn} shrink-0 lg:hidden`}
-                aria-expanded={menuOpen}
-                aria-controls="mobile-drawer"
-                onClick={() => setMenuOpen(true)}
-              >
-                <span className="sr-only">Menüyü aç</span>
+      <header className="border-b-2 border-white shadow-sm" style={{ backgroundColor: navBg }}>
+        <div className="mx-auto max-w-7xl px-4 py-4 md:px-6">
+          {/* Top Layer: Interaction & Logo */}
+          <div className="grid grid-cols-3 items-center">
+            {/* Left Icons */}
+            <div className="flex items-center gap-2">
+              <button type="button" className={`${iconBtn} lg:hidden`} onClick={() => setMenuOpen(true)}>
                 <IconHamburger />
               </button>
-
-              <Link
-                href="/"
-                className={`${iconBtn} shrink-0 lg:hidden`}
-                aria-label="Anasayfa"
-              >
+              <Link href="/" className={`${iconBtn} lg:hidden`} aria-label="Anasayfa">
                 <IconHome />
               </Link>
-
-              <div className="hidden text-sm font-medium uppercase tracking-wide text-[#e8e4dc] lg:block">
-                <Link
-                  href="/iletisim"
-                  className="group flex items-center gap-2 border-b border-transparent pb-0.5 transition-colors hover:border-[#ddbd53] hover:text-[#ddbd53]"
-                >
+              <div className="hidden lg:block">
+                <Link href="/iletisim" className="group flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-[#e8e4dc] transition-colors hover:text-[#ddbd53]">
                   <IconPin />
                   <span>Mağazalar</span>
                 </Link>
               </div>
             </div>
 
-            <div className="flex justify-center px-1">
-              <Link
-                href="/"
-                className="flex items-center justify-center shrink-0"
-              >
+            {/* Center: Hero Logo */}
+            <div className="flex justify-center">
+              <Link href="/" className="inline-block transition-transform duration-500 hover:scale-[1.02]">
                 <img 
-                  src="/333.png" 
-                  alt="Marka Logosu" 
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain"
+                  src="/logo_ultra.png" 
+                  alt="Doliva Logo" 
+                  className="h-24 sm:h-32 md:h-44 w-auto object-contain"
+                  style={{ mixBlendMode: 'screen', clipPath: 'inset(5%)' }}
                 />
               </Link>
             </div>
 
-            <div className="flex min-w-0 items-center justify-end gap-0.5 sm:gap-1">
-              <div className="mr-0.5 hidden shrink-0 items-center text-sm font-medium uppercase tracking-wide text-[#e8e4dc] md:flex lg:hidden">
-                <Link
-                  href="/iletisim"
-                  className="flex items-center gap-1.5 transition-colors hover:text-[#ddbd53]"
-                  aria-label="Mağazalar"
-                >
-                  <IconPin />
-                  <span className="sr-only sm:not-sr-only">Mağazalar</span>
-                </Link>
-              </div>
-
-              <nav className="flex shrink-0 items-center" aria-label="Hızlı bağlantılar">
-                <Link href="/iletisim" className={iconBtn} aria-label="Giriş yap">
-                  <IconAccount />
-                </Link>
-                <Link href="/urunler" className={iconBtn} aria-label="Ara">
-                  <IconSearch />
-                </Link>
-                <Link
-                  href="/urunler"
-                  className={`${iconBtn} relative`}
-                  aria-label="Sepet"
-                >
-                  <IconCart />
-                  <span className="absolute right-1 top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-[#ddbd53] px-1 text-[10px] font-bold text-[#030303]">
-                    0
-                  </span>
-                </Link>
-                <Link
-                  href="/urunler"
-                  className={`${iconBtn} relative`}
-                  aria-label="Favoriler"
-                >
-                  <IconWishlist />
-                  <span className="absolute -right-0.5 top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full border border-[#ddbd53]/35 bg-[#030303] px-1 text-[10px] font-semibold text-[#ddbd53]">
-                    0
-                  </span>
-                </Link>
-              </nav>
+            {/* Right Icons */}
+            <div className="flex items-center justify-end gap-1 sm:gap-2">
+              <a href="https://wa.me/905323801519" target="_blank" rel="noopener noreferrer" className={iconBtn} aria-label="WhatsApp">
+                <IconWhatsApp />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className={iconBtn} aria-label="Instagram">
+                <IconInstagram />
+              </a>
+              <Link href="/urunler" className={iconBtn} aria-label="Ara">
+                <IconSearch />
+              </Link>
             </div>
           </div>
 
-          <nav
-            className="mt-3 hidden justify-center gap-8 pt-3 lg:flex xl:gap-12"
-            aria-label="Birincil gezinti"
-          >
+          {/* Bottom Layer: Main Navigation */}
+          <nav className="mt-4 hidden justify-center gap-8 border-t border-white/10 pt-4 lg:flex xl:gap-14" aria-label="Birincil gezinti">
             {navLinks.map(({ href, label }) => {
-              const active =
-                href === "/" ? pathname === "/" : pathname.startsWith(href);
+              const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
               return (
                 <Link
                   key={href}
                   href={href}
-                  className={`border-b-2 pb-1 text-xs font-semibold uppercase tracking-[0.14em] transition-colors xl:text-sm text-[#ddbd53] ${active
-                    ? "border-[#ddbd53]"
-                    : "border-transparent hover:border-[#ddbd53]/60"
-                    }`}
+                  className={`border-b-2 pb-1 text-xs font-semibold uppercase tracking-[0.2em] transition-colors xl:text-sm text-[#ddbd53] ${active ? "border-[#ddbd53]" : "border-transparent hover:border-[#ddbd53]/60"}`}
                 >
                   {label}
                 </Link>
@@ -335,65 +156,45 @@ export function SiteNav() {
         </div>
       </header>
 
-      {/* Mobil çekmece */}
-      {menuOpen ? (
-        <div className="fixed inset-0 z-[60] lg:hidden" id="mobile-drawer">
-          <button
-            type="button"
-            className="absolute inset-0 bg-black/55 backdrop-blur-[2px]"
-            aria-label="Menüyü kapat"
-            onClick={() => setMenuOpen(false)}
-          />
-          <div
-            className="absolute inset-y-0 left-0 flex w-[min(100%,20rem)] flex-col border-r border-white/[0.06] shadow-xl"
-            style={{ backgroundColor: navBgElevated }}
-          >
-            <div className="flex items-center justify-between border-b border-white/[0.08] px-4 py-3">
-              <span className="text-sm font-semibold uppercase tracking-wider text-[#ddbd53]">
-                Menü
-              </span>
-              <button
-                type="button"
-                className="flex h-10 w-10 items-center justify-center text-[#e8e4dc] hover:text-[#ddbd53]"
-                onClick={() => setMenuOpen(false)}
-                aria-label="Kapat"
-              >
+      {/* Mobile Drawer */}
+      {menuOpen && (
+        <div className="fixed inset-0 z-[60] lg:hidden">
+          <button type="button" className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" onClick={() => setMenuOpen(false)} />
+          <div className="absolute inset-y-0 left-0 flex w-[min(100%,20rem)] flex-col shadow-xl" style={{ backgroundColor: navBgElevated }}>
+            <div className="flex h-16 items-center justify-between border-b border-white/[0.08] px-4">
+              <span className="text-sm font-semibold uppercase tracking-wider text-[#ddbd53]">Menü</span>
+              <button type="button" className="flex h-10 w-10 items-center justify-center text-[#e8e4dc]" onClick={() => setMenuOpen(false)}>
                 <IconClose />
               </button>
             </div>
             <ul className="flex flex-1 flex-col divide-y divide-white/[0.06] p-2">
               {navLinks.map(({ href, label }) => (
                 <li key={href}>
-                  <Link
-                    href={href}
-                    className="block px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:bg-white/[0.04] hover:text-[#ddbd53]"
-                  >
+                  <Link href={href} className="block px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:text-[#ddbd53] transition-colors">
                     {label}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link
-                  href="/iletisim"
-                  className="flex items-center gap-2 px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:bg-white/[0.04] hover:text-[#ddbd53]"
-                >
+                <Link href="/iletisim" className="flex items-center gap-2 px-3 py-4 text-base font-medium uppercase tracking-wide text-[#f5f2ec] hover:text-[#ddbd53]">
                   <IconPin className="shrink-0" />
                   Mağazalar
                 </Link>
               </li>
             </ul>
-            <div className="border-t border-white/[0.06] p-4">
-              <Link
-                href="/iletisim"
-                className="flex items-center gap-2 text-sm text-[#c9c4ba] hover:text-[#ddbd53]"
-              >
-                <IconAccount className="text-[#ddbd53]" />
-                Giriş yap
-              </Link>
+            <div className="border-t border-white/[0.06] p-6 space-y-4">
+              <a href="https://wa.me/905323801519" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm font-medium text-[#f5f2ec] hover:text-[#ddbd53]">
+                <IconWhatsApp className="text-[#ddbd53]" />
+                WhatsApp Sipariş
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm font-medium text-[#f5f2ec] hover:text-[#ddbd53]">
+                <IconInstagram className="text-[#ddbd53]" />
+                Instagram'da Keşfet
+              </a>
             </div>
           </div>
         </div>
-      ) : null}
+      )}
     </div>
   );
 }

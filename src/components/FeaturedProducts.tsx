@@ -1,6 +1,14 @@
+"use client";
+
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+// Swiper stilleri
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const featuredItems = [
   {
@@ -41,7 +49,7 @@ const featuredItems = [
 
 export function FeaturedProducts() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="pt-16 md:pt-24 pb-8 md:pb-12 bg-white overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
         
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -60,37 +68,64 @@ export function FeaturedProducts() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 min-[1150px]:gap-10">
-          {featuredItems.map((product) => (
-            <div key={product.id} className="group cursor-pointer">
-              
-              <div className="relative aspect-square overflow-hidden mb-5 bg-gray-50 border border-gray-100 shadow-sm rounded-sm">
-                {product.badge && (
-                  <span className="absolute top-3 left-3 bg-[#ddbd53] text-black text-[9px] font-bold uppercase tracking-widest px-2 py-1 z-10">
-                    {product.badge}
-                  </span>
-                )}
-                <img 
-                  src={product.image} 
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
+        <div className="relative">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={20}
+            slidesPerView={2}
+            navigation
+            pagination={{ clickable: true }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              1280: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+              },
+            }}
+            className="featured-products-swiper !pb-14"
+          >
+            {featuredItems.map((product) => (
+              <SwiperSlide key={product.id}>
+                <div className="group cursor-pointer">
+                  <div className="relative aspect-square overflow-hidden mb-5 bg-gray-50 border border-gray-100 shadow-sm rounded-sm">
+                    {product.badge && (
+                      <span className="absolute top-3 left-3 bg-[#ddbd53] text-black text-[9px] font-bold uppercase tracking-widest px-2 py-1 z-10">
+                        {product.badge}
+                      </span>
+                    )}
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
 
-              <div className="text-center px-1">
-                <Link href="/urunler">
-                  <h4 className="text-sm md:text-base font-medium text-[#1c1c1c] group-hover:text-[#ddbd53] transition-colors leading-snug">
-                    {product.name}
-                  </h4>
-                </Link>
-              </div>
-              
-            </div>
-          ))}
+                  <div className="text-center px-1">
+                    <Link href="/urunler">
+                      <h4 className="text-sm md:text-base font-medium text-[#1c1c1c] group-hover:text-[#ddbd53] transition-colors leading-snug">
+                        {product.name}
+                      </h4>
+                    </Link>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
 
-        <div className="mt-12 text-center md:hidden">
+        <div className="mt-8 text-center md:hidden">
           <Link 
             href="/urunler" 
             className="inline-block text-xs uppercase tracking-[0.2em] font-semibold text-black px-8 py-3 border border-black hover:bg-black hover:text-white transition-colors"
@@ -100,6 +135,31 @@ export function FeaturedProducts() {
         </div>
 
       </div>
+
+      <style jsx global>{`
+        .featured-products-swiper .swiper-button-next,
+        .featured-products-swiper .swiper-button-prev {
+          color: #000;
+          background: rgba(221, 189, 83, 0.9);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          transform: translateY(-20px);
+        }
+        .featured-products-swiper .swiper-button-next:after,
+        .featured-products-swiper .swiper-button-prev:after {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .featured-products-swiper .swiper-button-next:hover,
+        .featured-products-swiper .swiper-button-prev:hover {
+          background: #000;
+          color: #ddbd53;
+        }
+        .featured-products-swiper .swiper-pagination-bullet-active {
+          background: #ddbd53;
+        }
+      `}</style>
     </section>
   );
 }

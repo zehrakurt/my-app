@@ -50,7 +50,7 @@ export function HeroBanner() {
   };
 
   return (
-    <section className="relative w-full h-[600px] bg-black overflow-hidden group">
+    <section className="relative w-full h-[450px] sm:h-[550px] md:h-[600px] bg-black overflow-hidden group">
 
       <div
         className="flex w-full h-full transition-transform duration-1000 ease-in-out"
@@ -62,13 +62,13 @@ export function HeroBanner() {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-black/40"></div>
             </div>
 
             {slide.title && (
-              <div className="absolute inset-0 flex flex-col items-start justify-center text-left px-8 md:px-16 lg:px-24">
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center md:items-start md:text-left px-8 md:px-16 lg:px-24">
                 <h3 className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-[#ddbd53] mb-2 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                   {slide.subtitle}
                 </h3>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function CategoryGrid() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-8 md:pt-12 pb-16 md:pb-24">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
 
         {/* Tanıtım Yazısı */}
@@ -18,12 +18,12 @@ export function CategoryGrid() {
           {/* KART 1 */}
           <Link
             href="/pages/ozel-koleksiyonlar"
-            className="block w-full h-[180px] min-[700px]:h-[400px] relative group overflow-hidden"
+            className="block w-full h-[260px] min-[700px]:h-[400px] relative group overflow-hidden"
           >
             <img
               src="kk.png"
               alt="Özel Koleksiyonlar"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
+              className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
             />
 
             <div className="absolute inset-0 flex items-end justify-center p-6">
@@ -36,12 +36,12 @@ export function CategoryGrid() {
           {/* KART 2 */}
           <Link
             href="/collections/toplu-alimlara-ozel-indirim-firsati"
-            className="block w-full h-[180px] min-[700px]:h-[400px] relative group overflow-hidden"
+            className="block w-full h-[260px] min-[700px]:h-[400px] relative group overflow-hidden"
           >
             <img
               src="nn.png"
               alt="Kurumsallara Özel"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
+              className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
             />
 
             <div className="absolute inset-0 flex items-end justify-center p-6">
@@ -54,12 +54,12 @@ export function CategoryGrid() {
           {/* KART 3 */}
           <Link
             href="/collections/taze-urunler"
-            className="block w-full h-[180px] min-[700px]:h-[400px] relative group overflow-hidden"
+            className="block w-full h-[260px] min-[700px]:h-[400px] relative group overflow-hidden"
           >
             <img
               src="/222.jpeg"
               alt="Yeni Ürünler"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
+              className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
             />
 
             <div className="absolute inset-0 flex items-end justify-center p-6">
