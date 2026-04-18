@@ -49,16 +49,16 @@ const featuredItems = [
 
 export function FeaturedProducts() {
   return (
-    <section className="pt-16 md:pt-24 pb-8 md:pb-12 bg-white overflow-hidden">
+    <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
-        
+
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div className="max-w-2xl">
             <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-[#ddbd53] mb-3">ÖZEL SEÇKİ</h2>
             <h3 className="text-3xl md:text-3xl font-serif text-[#1c1c1c]">Öne Çıkan Lezzetler</h3>
           </div>
-          <Link 
-            href="/urunler" 
+          <Link
+            href="/urunler"
             className="hidden md:inline-flex items-center gap-2 text-gray-500 hover:text-[#ddbd53] font-medium transition-colors"
           >
             Tümünü Gör
@@ -104,8 +104,8 @@ export function FeaturedProducts() {
                         {product.badge}
                       </span>
                     )}
-                    <img 
-                      src={product.image} 
+                    <img
+                      src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
                     />
@@ -126,8 +126,8 @@ export function FeaturedProducts() {
         </div>
 
         <div className="mt-8 text-center md:hidden">
-          <Link 
-            href="/urunler" 
+          <Link
+            href="/urunler"
             className="inline-block text-xs uppercase tracking-[0.2em] font-semibold text-black px-8 py-3 border border-black hover:bg-black hover:text-white transition-colors"
           >
             Tüm Ürünleri Gör

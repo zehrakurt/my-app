@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function CategoryGrid() {
   return (
-    <section className="pt-8 md:pt-12 pb-16 md:pb-24">
+    <section className="py-16 md:py-24">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
 
         {/* Tanıtım Yazısı */}
