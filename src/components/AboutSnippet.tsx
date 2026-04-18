@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function AboutSnippet() {
   return (
-    <section className="py-24 bg-white overflow-hidden border-t border-gray-100">
+    <section className="py-16 md:py-24 bg-white overflow-hidden border-t border-gray-100">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           

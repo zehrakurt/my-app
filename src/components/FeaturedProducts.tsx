@@ -6,41 +6,48 @@ const featuredItems = [
   {
     id: 1,
     name: "Klasik Sütlü Trüf Çikolata",
-    price: "350 ₺",
+    category: "Trüf Serisi",
     image: "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=600",
     badge: "Çok Satan"
   },
   {
     id: 2,
     name: "Bitter & Ahududu Dolgulu Pralin",
-    price: "420 ₺",
+    category: "Pralin Koleksiyonu",
     image: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&q=80&w=600",
     badge: "Yeni"
   },
   {
     id: 3,
     name: "Karamel & Deniz Tuzu Tablet",
-    price: "280 ₺",
+    category: "Tablet Serisi",
     image: "https://images.pexels.com/photos/867470/pexels-photo-867470.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
     id: 4,
-    name: "Prestij Karışık Hediye Kutusu",
-    price: "850 ₺",
+    name: "Fındıklı Gurme Rocher",
+    category: "Rocher Serisi",
     image: "https://images.pexels.com/photos/65882/chocolate-dark-coffee-confiserie-65882.jpeg?auto=compress&cs=tinysrgb&w=600",
+    badge: "Popüler"
+  },
+  {
+    id: 5,
+    name: "Prestij Karışık Hediye Kutusu",
+    category: "Hediye Kutuları",
+    image: "https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg?auto=compress&cs=tinysrgb&w=600",
     badge: "Özel Kutu"
   }
 ];
 
 export function FeaturedProducts() {
   return (
-    <section className="py-20 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
         
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div className="max-w-2xl">
             <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-[#ddbd53] mb-3">ÖZEL SEÇKİ</h2>
-            <h3 className="text-3xl md:text-4xl font-serif text-[#1c1c1c]">Öne Çıkan Lezzetler</h3>
+            <h3 className="text-3xl md:text-3xl font-serif text-[#1c1c1c]">Öne Çıkan Lezzetler</h3>
           </div>
           <Link 
             href="/urunler" 
@@ -53,32 +60,30 @@ export function FeaturedProducts() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 min-[1150px]:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 min-[1150px]:gap-10">
           {featuredItems.map((product) => (
-            <div key={product.id} className="group relative">
+            <div key={product.id} className="group cursor-pointer">
               
-              <div className="relative aspect-square overflow-hidden bg-gray-50">
+              <div className="relative aspect-square overflow-hidden mb-5 bg-gray-50 border border-gray-100 shadow-sm rounded-sm">
                 {product.badge && (
-                  <div className="absolute top-4 left-4 z-10 bg-[#ddbd53] text-black text-xs font-bold uppercase tracking-[0.1em] py-1.5 px-3">
+                  <span className="absolute top-3 left-3 bg-[#ddbd53] text-black text-[9px] font-bold uppercase tracking-widest px-2 py-1 z-10">
                     {product.badge}
-                  </div>
+                  </span>
                 )}
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-[800ms] ease-out"
+                  className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
 
-              <div className="pt-5 text-center px-2">
-                <Link href={`/urunler`}>
-                  <h4 className="text-base min-[1150px]:text-lg font-medium text-[#1c1c1c] mb-1.5 group-hover:text-[#ddbd53] transition-colors leading-snug">
+              <div className="text-center px-1">
+                <Link href="/urunler">
+                  <h4 className="text-sm md:text-base font-medium text-[#1c1c1c] group-hover:text-[#ddbd53] transition-colors leading-snug">
                     {product.name}
                   </h4>
                 </Link>
-                <div className="text-gray-500 font-semibold text-sm min-[1150px]:text-base">
-                  {product.price}
-                </div>
               </div>
               
             </div>

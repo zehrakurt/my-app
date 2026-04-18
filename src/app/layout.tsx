@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "my-app",
-    template: "%s | my-app",
+    default: "Doliva Premium Çikolata",
+    template: "%s | Doliva",
   },
   description: "Anasayfa, hakkımızda, ürünler ve iletişim.",
 };

@@ -4,6 +4,9 @@ import { ContactNewsletter } from "@/components/ContactNewsletter";
 import { FeaturedProducts } from "@/components/FeaturedProducts";
 import { AboutSnippet } from "@/components/AboutSnippet";
 import { FeaturesSection } from "@/components/FeaturesSection";
+import { SensoryExperience } from "@/components/SensoryExperience";
+import { MasterChocolatiers } from "@/components/MasterChocolatiers";
+import { VideoShowcase } from "@/components/VideoShowcase";
 
 export default function Home() {
   return (
@@ -12,10 +15,11 @@ export default function Home() {
       <FeaturedProducts />
       <CategoryGrid />
       <AboutSnippet />
-      <ContactNewsletter />
-
-
+      <SensoryExperience />
+      <MasterChocolatiers />
+      <VideoShowcase />
       <FeaturesSection />
+      <ContactNewsletter />
     </>
   );
 }

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function CategoryGrid() {
   return (
-    <section className="py-10">
+    <section className="py-16 md:py-24">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
 
         {/* Tanıtım Yazısı */}
@@ -21,7 +21,7 @@ export function CategoryGrid() {
             className="block w-full h-[180px] min-[700px]:h-[400px] relative group overflow-hidden"
           >
             <img
-              src="https://www.godiva.com.tr/cdn/shop/files/Ekran_goruntusu_2025-08-21_150918.jpg?v=1755778198&width=853"
+              src="kk.png"
               alt="Özel Koleksiyonlar"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
             />
@@ -39,7 +39,7 @@ export function CategoryGrid() {
             className="block w-full h-[180px] min-[700px]:h-[400px] relative group overflow-hidden"
           >
             <img
-              src="https://www.godiva.com.tr/cdn/shop/files/Adsiz_tasarim_ea8bd0e3-d566-4af8-81c1-d391442c484a.png?v=1750078376&width=2490"
+              src="nn.png"
               alt="Kurumsallara Özel"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-[800ms] ease-out group-hover:scale-[1.03]"
             />

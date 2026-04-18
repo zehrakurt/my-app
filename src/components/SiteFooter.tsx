@@ -55,18 +55,18 @@ export function SiteFooter() {
             <h4 className="text-[#cfb56a] font-semibold tracking-wider uppercase text-sm mb-6">Müşteri Hizmetleri</h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <a href="mailto:info@myapp.com" className="hover:text-white transition-colors">
-                  info@myapp.com
+                <a href="mailto:dolivacikolata@gmail.com" className="hover:text-white transition-colors">
+                  dolivacikolata@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+905323481999" className="hover:text-white transition-colors">
-                  +90 532 348 19 99
+                <a href="tel:+905323801519" className="hover:text-white transition-colors">
+                  0532 380 15 19
                 </a>
               </li>
               <li className="pt-4">
                 <a 
-                  href="https://wa.me/905323481999" 
+                  href="https://wa.me/905323801519" 
                   target="_blank" 
                   rel="noreferrer"
                   className="inline-block border border-[#cfb56a] text-[#cfb56a] px-6 py-2 rounded uppercase tracking-wider text-xs font-semibold hover:bg-[#cfb56a] hover:text-black transition-all"
@@ -80,7 +80,7 @@ export function SiteFooter() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500">
-          <p>&copy; {currentYear} MY APP Çikolata. Tüm hakları saklıdır.</p>
+          <p>&copy; {currentYear} Doliva Premium Çikolata. Tüm hakları saklıdır. <span className="ml-2 opacity-60">LMG Grup markasıdır.</span></p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
             <Link href="#" className="hover:text-white transition-colors">Mesafeli Satış Sözleşmesi</Link>

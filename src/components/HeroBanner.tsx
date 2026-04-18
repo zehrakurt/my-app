@@ -6,7 +6,7 @@ import Link from "next/link";
 const slides = [
   {
     id: 1,
-    image: "https://images.pexels.com/photos/65882/chocolate-dark-coffee-confiserie-65882.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "77.png",
     title: "Sevdiklerinize Özel",
     subtitle: "Zarif ve Şık Hediye Kutuları",
     buttonText: "Hediyelikler",
@@ -14,7 +14,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "77.png",
+    image: "88.png",
     title: "El Yapımı Pralinler",
     subtitle: "Katkısız ve Doğal Kakao %100 Memnuniyet",
     buttonText: "Ürünleri İncele",
@@ -50,7 +50,7 @@ export function HeroBanner() {
   };
 
   return (
-    <section className="relative w-full h-[400px] bg-black overflow-hidden group">
+    <section className="relative w-full h-[600px] bg-black overflow-hidden group">
 
       <div
         className="flex w-full h-full transition-transform duration-1000 ease-in-out"
@@ -106,16 +106,26 @@ export function HeroBanner() {
         </svg>
       </button>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-[#ddbd53] w-6" : "bg-white/50 hover:bg-white"
-              }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
+        <div className="flex gap-2 mb-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-[#ddbd53] w-6" : "bg-white/50 hover:bg-white"
+                }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+        
+        {/* Scroll Down Indicator */}
+        <div className="flex flex-col items-center animate-bounce opacity-80 mt-2">
+          <span className="text-[10px] text-white uppercase tracking-[0.2em] mb-1">Keşfet</span>
+          <svg className="w-4 h-4 text-[#ddbd53]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7-7-7" />
+          </svg>
+        </div>
       </div>
 
     </section>

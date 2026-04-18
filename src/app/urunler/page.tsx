@@ -1,51 +1,69 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ürünler",
-  description: "Ürün kataloğumuzu keşfedin.",
+  title: "Ürünlerimiz | Doliva",
+  description: "Özel koleksiyon çikolatalarımızı keşfedin.",
 };
 
 const products = [
   {
-    name: "Temel Paket",
-    description: "Bireysel kullanıcılar için temel özellikler ve destek.",
+    id: 1,
+    name: "Klasik Sütlü Trüf",
+    description: "En kaliteli Belçika çikolatası ve taze krema ile hazırlanan, ağızda eriyen klasik lezzet.",
+    image: "/44444.png",
   },
   {
-    name: "Profesyonel Paket",
-    description: "Ekipler için gelişmiş araçlar ve öncelikli destek.",
+    id: 2,
+    name: "Bitter & Ahududu Pralin",
+    description: "Yoğun bitter çikolata ve taze ahududu dolgusunun mükemmel uyumu.",
+    image: "/222.jpeg",
   },
   {
-    name: "Kurumsal",
-    description: "Ölçeklenebilir altyapı ve özelleştirilmiş çözümler.",
-  },
+    id: 3,
+    name: "Deniz Tuzlu Karamel",
+    description: "Elde hazırlanan karamel ve hafif deniz tuzu taneleriyle zenginleştirilmiş özel tablet.",
+    image: "/111.png",
+  }
 ];
 
 export default function UrunlerPage() {
   return (
-    <div className="flex flex-1 flex-col bg-zinc-50 dark:bg-black">
-      <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-16">
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-          Ürünler
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          İhtiyacınıza uygun paketleri inceleyin. Detaylı bilgi ve fiyat için
-          iletişime geçebilirsiniz.
-        </p>
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="bg-white min-h-screen">
+      {/* Simple Header */}
+      <section className="py-16 md:py-14 border-b border-gray-100">
+        <div className="max-w-[1400px] mx-auto px-4 lg:px-8 text-center">
+          <h1 className="font-serif text-4xl md:text-5xl text-[#1c1c1c] tracking-tight">Ürünlerimiz</h1>
+          <div className="w-16 h-1 bg-[#ddbd53] mx-auto mt-6"></div>
+        </div>
+      </section>
+
+      {/* Products Grid */}
+      <main className="max-w-[1400px] mx-auto px-4 lg:px-8 py-16 md:py-24">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10">
           {products.map((product) => (
-            <li
-              key={product.name}
-              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950"
-            >
-              <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
-                {product.name}
-              </h2>
-              <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-                {product.description}
-              </p>
-            </li>
+            <div key={product.id} className="group cursor-pointer">
+              {/* Image Container */}
+              <div className="relative aspect-square overflow-hidden mb-6 bg-gray-50 border border-gray-100 shadow-sm rounded-sm">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+
+              {/* Product Info */}
+              <div className="text-center">
+                <h2 className="font-medium text-sm md:text-base text-[#1c1c1c] mb-2 group-hover:text-[#ddbd53] transition-colors leading-snug">
+                  {product.name}
+                </h2>
+                <p className="text-gray-500 text-[13px] leading-relaxed max-w-[200px] mx-auto">
+                  {product.description}
+                </p>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </main>
     </div>
   );

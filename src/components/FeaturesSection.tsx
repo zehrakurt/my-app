@@ -41,7 +41,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 bg-gray-50 border-t border-gray-200">
+    <section className="py-16 md:py-24 mb-16 xl:mb-20 bg-gray-50 border-t border-gray-200">
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-serif text-[#1c1c1c] mb-4 tracking-wide">Neden Bizi Tercih Etmelisiniz?</h2>

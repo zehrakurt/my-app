@@ -2,14 +2,14 @@ import React from 'react';
 
 export function ContactNewsletter() {
   return (
-    <section className="w-full bg-[#f8f6f3]">
+    <section className="w-full bg-[#f8f6f3] mb-16 xl:mb-20">
 
       <div className="flex flex-col lg:flex-row lg:h-[550px]">
 
         {/* SOL - IMAGE */}
         <div className="w-full lg:basis-[60%] h-[300px] md:h-[450px] lg:h-full">
           <img
-            src="https://www.godiva.com.tr/cdn/shop/files/1500x800box.png?v=1740145632&width=1500"
+            src="21111.jfif"
             alt=""
             className="w-full h-full object-cover"
           />
